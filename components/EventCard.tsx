@@ -40,7 +40,7 @@ export function EventCard({
             onClick={() => onOpen(event)}
             className="min-w-0 flex-1 text-left"
           >
-            <h3 className="line-clamp-2 min-w-0 text-base font-semibold leading-snug text-zinc-900 focus:outline-none">
+            <h3 className="min-w-0 text-base font-semibold leading-snug text-zinc-900 focus:outline-none">
               {event.title}
             </h3>
           </button>
