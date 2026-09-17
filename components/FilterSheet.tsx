@@ -60,7 +60,7 @@ export function FilterSheet({
           </button>
         </div>
 
-        <div className="min-h-0 flex-1 overflow-y-auto px-5 py-5">
+        <div className="h-[68vh] shrink-0 overflow-y-auto px-5 py-5">
           <FilterFields filters={filters} onChange={onChange} />
         </div>
 
