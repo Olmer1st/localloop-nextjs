@@ -24,7 +24,7 @@ export function Header({
   const [mobileSearchOpen, setMobileSearchOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/95 backdrop-blur-sm">
+    <header className="sticky top-0 z-[60] border-b border-zinc-200 bg-white/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <span className="text-lg font-bold tracking-tight text-zinc-900">
           Local<span className="text-fuchsia-600">Loop</span>
