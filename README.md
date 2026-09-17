@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LocalLoop
 
-## Getting Started
+LocalLoop is a demo consumer app for discovering nearby events and planning
+your weekend. Browse a feed of local happenings, filter by category, price,
+day, or distance, and save the ones you don't want to miss.
 
-First, run the development server:
+## Features
+
+- Discover feed with a featured event, category chips, and a responsive event grid
+- Search by event title or venue
+- Filtering by day, max price, and max distance (desktop popover / mobile bottom sheet)
+- Sort by soonest, nearest, or price
+- Event detail view with date, venue, description, and price
+- Favoriting with a live count in the header
+- Responsive layout from mobile through desktop, with visible keyboard focus states
+
+All data is local, deterministic mock data — there is no backend, database,
+or external API.
+
+## Prerequisites
+
+- Node.js 20+
+- npm
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Tech stack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org) (App Router)
+- React + TypeScript
+- Tailwind CSS
